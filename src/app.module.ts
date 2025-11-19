@@ -11,10 +11,11 @@ import { RolesModule } from './roles/roles.module';
 import { FaqsModule } from './faqs/faqs.module';
 import { NotificacionesModule } from './notificaciones/notificaciones.module';
 import { ReportesModule } from './reportes/reportes.module';
+import { IntentosModule } from './intentos/intentos.module';
 
 @Module({
   imports: [UsuariosModule, ModulosModule, ActividadesModule, PreguntasModule, 
-    MongooseModule.forRoot('mongodb+srv://itorreglosadiaz_db_user:xhhXLkHUJiALkCOA@cluster0.yknb7it.mongodb.net/server_codex?appName=Cluster0'), ComandosModule, RolesModule, FaqsModule, NotificacionesModule, ReportesModule],
+    MongooseModule.forRoot('mongodb+srv://itorreglosadiaz_db_user:xhhXLkHUJiALkCOA@cluster0.yknb7it.mongodb.net/server_codex?appName=Cluster0'), ComandosModule, RolesModule, FaqsModule, NotificacionesModule, ReportesModule, IntentosModule],
   controllers: [AppController],
   providers: [AppService],
 })
