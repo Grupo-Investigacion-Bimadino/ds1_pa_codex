@@ -12,10 +12,13 @@ import { FaqsModule } from './faqs/faqs.module';
 import { NotificacionesModule } from './notificaciones/notificaciones.module';
 import { ReportesModule } from './reportes/reportes.module';
 import { IntentosModule } from './intentos/intentos.module';
+import { ResultadosModule } from './resultados/resultados.module';
+import { SesionModule } from './sesion/sesion.module';
+import { SesionesModule } from './sesiones/sesiones.module';
 
 @Module({
   imports: [UsuariosModule, ModulosModule, ActividadesModule, PreguntasModule, 
-    MongooseModule.forRoot('mongodb+srv://itorreglosadiaz_db_user:xhhXLkHUJiALkCOA@cluster0.yknb7it.mongodb.net/server_codex?appName=Cluster0'), ComandosModule, RolesModule, FaqsModule, NotificacionesModule, ReportesModule, IntentosModule],
+    MongooseModule.forRoot('mongodb+srv://itorreglosadiaz_db_user:xhhXLkHUJiALkCOA@cluster0.yknb7it.mongodb.net/server_codex?appName=Cluster0'), ComandosModule, RolesModule, FaqsModule, NotificacionesModule, ReportesModule, IntentosModule, ResultadosModule, SesionModule, SesionesModule],
   controllers: [AppController],
   providers: [AppService],
 })
