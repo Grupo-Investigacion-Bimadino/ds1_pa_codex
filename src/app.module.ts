@@ -13,12 +13,16 @@ import { NotificacionesModule } from './notificaciones/notificaciones.module';
 import { ReportesModule } from './reportes/reportes.module';
 import { IntentosModule } from './intentos/intentos.module';
 import { ResultadosModule } from './resultados/resultados.module';
-import { SesionModule } from './sesion/sesion.module';
 import { SesionesModule } from './sesiones/sesiones.module';
+import { EvaluacionesModule } from './evaluaciones/evaluaciones.module';
+import { ConfiguracionesAccesibilidadesModule } from './configuraciones_accesibilidades/configuraciones_accesibilidades.module';
+import { ProgresosModule } from './progresos/progresos.module';
+import { IntegracionesExternasModule } from './integraciones_externas/integraciones_externas.module';
+import { AyudasContextualesModule } from './ayudas_contextuales/ayudas_contextuales.module';
 
 @Module({
   imports: [UsuariosModule, ModulosModule, ActividadesModule, PreguntasModule, 
-    MongooseModule.forRoot('mongodb+srv://itorreglosadiaz_db_user:xhhXLkHUJiALkCOA@cluster0.yknb7it.mongodb.net/server_codex?appName=Cluster0'), ComandosModule, RolesModule, FaqsModule, NotificacionesModule, ReportesModule, IntentosModule, ResultadosModule, SesionModule, SesionesModule],
+    MongooseModule.forRoot('mongodb+srv://itorreglosadiaz_db_user:xhhXLkHUJiALkCOA@cluster0.yknb7it.mongodb.net/server_codex?appName=Cluster0'), ComandosModule, RolesModule, FaqsModule, NotificacionesModule, ReportesModule, IntentosModule, ResultadosModule, SesionesModule, EvaluacionesModule, ConfiguracionesAccesibilidadesModule, ProgresosModule, IntegracionesExternasModule, AyudasContextualesModule],
   controllers: [AppController],
   providers: [AppService],
 })
