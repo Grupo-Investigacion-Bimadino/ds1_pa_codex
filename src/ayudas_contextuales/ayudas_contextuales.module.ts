@@ -7,10 +7,10 @@ import {
   Ayudas_contextualesSchema,
 } from './schemas/ayudas_contextuales.schema';
 
-@Module({
+@Module({ 
   imports: [
     MongooseModule.forFeature([
-      { name: 'AyudasContextuales', schema: Ayudas_contextualesSchema },
+      { name: Ayudas_contextuales.name, schema: Ayudas_contextualesSchema },
     ]),
   ],
   controllers: [AyudasContextualesController],
